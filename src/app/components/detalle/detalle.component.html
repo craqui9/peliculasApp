@@ -4,7 +4,8 @@
     <h1>{{pelicula.title}}</h1>
   </ion-label>
 
-  <img [src]="pelicula.backdrop_path | imagen" *ngIf="pelicula.backdrop_path">
+  <img [src]="pelicula.backdrop_path | imagen" >
+  <!-- *ngIf="pelicula.backdrop_path" -->
 
   <ion-grid>
     <ion-row>
@@ -87,7 +88,7 @@
 
     <ion-buttons slot="end">
       <ion-button (click)="favorito()">
-        <ion-icon slot="end" name="star-outline"></ion-icon>
+        <ion-icon slot="end" [name]="estrella"></ion-icon>
         <ion-label>Favorito</ion-label>
       </ion-button>
     </ion-buttons>
