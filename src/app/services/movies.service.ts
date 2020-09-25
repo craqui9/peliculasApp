@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { RespuestaMDB, PeliculaDetalle, RespuestaCredits, Genre } from '../interfaces/interfaces';
 import { environment } from '../../environments/environment';
-import { resolve } from 'dns';
+//import { resolve } from 'dns';
 
 
 const URL = environment.url;
